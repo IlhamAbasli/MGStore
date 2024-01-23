@@ -1,0 +1,246 @@
+#header-top{
+    width: 100%;
+    height: 45px;
+    background-color: #f15803;
+    .left-side{
+        display: flex;
+        width: 100%;
+        height: 45px;
+        align-items: center;
+        ul{
+            display: flex;
+            list-style: none;
+            li{
+                a{
+                    text-decoration: none;
+                    font-size: 14px;
+                    padding: 0 10px;
+                    color: #fff;
+                    transition: 0.5s;
+
+                    &:hover{
+                        color: #dadada;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .right-side{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-end;
+        .lang{
+            width: 100px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            cursor: pointer;
+            &:hover ul{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;  
+                gap: 15px;  
+            }
+            img{
+                width: 16px;
+                height: 11px;
+            }
+            span{
+                font-size: 11px;
+                color: #fff;
+                text-transform: uppercase;
+                padding: 0 3px;
+            }
+            ul{
+                display: none;
+                list-style: none;
+                z-index: 10;
+                position: absolute;
+                top: 30px;
+                width: 100%;
+                height: 60px;
+                background-color: #fff;
+                box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+                p{
+                    font-size: 11px;
+                    line-height: 10px;
+                    text-transform: uppercase;
+                    padding: 0 8px;
+                }
+            }
+        }
+        .operations{
+            ul{
+                display: flex;
+                list-style: none;
+                li{
+                    a{
+                        font-size: 11px;
+                        text-decoration: none;
+                        color: #fff;
+                        padding: 0 10px;
+                        text-transform: uppercase;
+                        i{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+#header-down{
+    width: 100%;
+    background-color: #fff;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    .logo{
+        width: 100%;
+        cursor: pointer;
+        .bars{
+            display: none;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    .search-box{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        input{
+            width: 242px;
+            font-size: 13px;
+            padding-left: 15px;
+            padding-right: 40px;
+            height: 41px;
+            border: 1px solid #f15803;
+        }
+        i{
+            position: absolute;
+            right: 40px;
+            font-size: 16px;
+            color: #f15803;
+        }
+    }
+    .workdays{
+        width: 100%;
+        height: 100%;
+        margin-left: 36px;
+        line-height: 21px;
+        a{
+            font-size: 33px;
+            cursor: pointer;
+            color: #f15803;
+        }
+        p{
+            font-size: 12px;
+            font-family: GothamLight;
+            margin-left: 12px;
+        }
+    }
+    .cart{
+        display: flex;
+        gap: 20px;
+        .lang{
+            display: none;
+        }
+        .wishlist{
+            width: 41px;
+            height: 41px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background-color: #f15803;
+            position: relative;
+            i{
+                font-size: 15px;
+                color: #fff;
+            }
+            .count{
+                width: 21px;
+                height: 21px;
+                background-color: #f15803;
+                border-radius: 50%;
+                position: absolute;
+                top: -6px;
+                right: -9px;
+                color: #fff;
+                font-size: 11px;
+                border: 1px solid #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: GothamLight;
+            }
+        }
+    }
+    .shop{
+        display: flex;
+        align-items: center;
+        .butn{
+            width: 41px;
+            height: 41px;
+            background-color: #f15803;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            img{
+                width: 20px;
+                height: 20px;
+                filter: invert(100%);
+            }
+        }
+        span{
+            font-size: 11px;
+            margin-left: 5px;
+            font-family: GothamLight;
+            font-weight: 600;
+            color: #3A3A3A;
+        }
+    }
+}
+
+
+#navbar{
+    width: 100%;
+    display: flex;
+    height: 46px;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        li{
+            a{
+                text-decoration: none;
+                font-size: 14px;
+                color: #3A3A3A;
+                text-transform: uppercase;
+                font-family: GothamBold;
+                padding: 10px 0;
+                cursor: pointer;
+                transition: 0.5s;
+
+                &:hover{
+                    color: #f15803;
+                }
+            }
+        }
+    }
+}

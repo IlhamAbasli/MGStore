@@ -1,0 +1,455 @@
+#header-top {
+  width: 100%;
+  height: 45px;
+  background-color: #f15803;
+}
+#header-top .left-side {
+  display: flex;
+  width: 100%;
+  height: 45px;
+  align-items: center;
+}
+#header-top .left-side ul {
+  display: flex;
+  list-style: none;
+}
+#header-top .left-side ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  padding: 0 10px;
+  color: #fff;
+  transition: 0.5s;
+}
+#header-top .left-side ul li a:hover {
+  color: #dadada;
+}
+#header-top .right-side {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-end;
+}
+#header-top .right-side .lang {
+  width: 100px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+#header-top .right-side .lang:hover ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+#header-top .right-side .lang img {
+  width: 16px;
+  height: 11px;
+}
+#header-top .right-side .lang span {
+  font-size: 11px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0 3px;
+}
+#header-top .right-side .lang ul {
+  display: none;
+  list-style: none;
+  z-index: 10;
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+}
+#header-top .right-side .lang ul p {
+  font-size: 11px;
+  line-height: 10px;
+  text-transform: uppercase;
+  padding: 0 8px;
+}
+#header-top .right-side .operations ul {
+  display: flex;
+  list-style: none;
+}
+#header-top .right-side .operations ul li a {
+  font-size: 11px;
+  text-decoration: none;
+  color: #fff;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+#header-top .right-side .operations ul li a i {
+  font-size: 15px;
+}
+
+#header-down {
+  width: 100%;
+  background-color: #fff;
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+#header-down .logo {
+  width: 100%;
+  cursor: pointer;
+}
+#header-down .logo .bars {
+  display: none;
+}
+#header-down .logo img {
+  width: 100%;
+}
+#header-down .search-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#header-down .search-box input {
+  width: 242px;
+  font-size: 13px;
+  padding-left: 15px;
+  padding-right: 40px;
+  height: 41px;
+  border: 1px solid #f15803;
+}
+#header-down .search-box i {
+  position: absolute;
+  right: 40px;
+  font-size: 16px;
+  color: #f15803;
+}
+#header-down .workdays {
+  width: 100%;
+  height: 100%;
+  margin-left: 36px;
+  line-height: 21px;
+}
+#header-down .workdays a {
+  font-size: 33px;
+  cursor: pointer;
+  color: #f15803;
+}
+#header-down .workdays p {
+  font-size: 12px;
+  font-family: GothamLight;
+  margin-left: 12px;
+}
+#header-down .cart {
+  display: flex;
+  gap: 20px;
+}
+#header-down .cart .lang {
+  display: none;
+}
+#header-down .cart .wishlist {
+  width: 41px;
+  height: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #f15803;
+  position: relative;
+}
+#header-down .cart .wishlist i {
+  font-size: 15px;
+  color: #fff;
+}
+#header-down .cart .wishlist .count {
+  width: 21px;
+  height: 21px;
+  background-color: #f15803;
+  border-radius: 50%;
+  position: absolute;
+  top: -6px;
+  right: -9px;
+  color: #fff;
+  font-size: 11px;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: GothamLight;
+}
+#header-down .shop {
+  display: flex;
+  align-items: center;
+}
+#header-down .shop .butn {
+  width: 41px;
+  height: 41px;
+  background-color: #f15803;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#header-down .shop .butn img {
+  width: 20px;
+  height: 20px;
+  filter: invert(100%);
+}
+#header-down .shop span {
+  font-size: 11px;
+  margin-left: 5px;
+  font-family: GothamLight;
+  font-weight: 600;
+  color: #3A3A3A;
+}
+
+#navbar {
+  width: 100%;
+  display: flex;
+  height: 46px;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+#navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+#navbar ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #3A3A3A;
+  text-transform: uppercase;
+  font-family: GothamBold;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#navbar ul li a:hover {
+  color: #f15803;
+}
+
+@font-face {
+  font-family: GothamBold;
+  src: url(../../fonts/Gotham-Bold.woff2);
+}
+@font-face {
+  font-family: GothamLight;
+  src: url(../../fonts/Gotham-Light.woff2);
+}
+@font-face {
+  font-family: Nunito;
+  src: url(../../fonts/NunitoSans_10pt-Regular.ttf);
+}
+.container-main {
+  width: 60%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: GothamBold;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.whatsapp {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 95px;
+  border-radius: 50%;
+  right: 23px;
+  background-color: #25d366;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 3px #999;
+}
+.whatsapp i {
+  color: #fff;
+}
+
+#banner {
+  background-image: url(../../images/redmi_banner_bg.png);
+  width: 100%;
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+#banner .arrows {
+  position: absolute;
+  width: 100%;
+  display: none;
+  top: 50%;
+  transition: 0.9s;
+}
+#banner .arrows i {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fafa24;
+  background-color: rgba(216, 216, 216, 0.8509803922);
+}
+#banner:hover .arrows {
+  display: flex;
+  justify-content: space-between;
+}
+#banner .dots {
+  display: flex;
+  position: absolute;
+  gap: 10px;
+  bottom: 20px;
+  width: 100%;
+  justify-content: center;
+}
+#banner .dots .item {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #b7b7b7;
+}
+#banner .dots .item:nth-child(3) {
+  width: 16px;
+  height: 16px;
+  border: 3px solid #b7b7b7;
+  border-radius: 50%;
+  background-color: #3A3A3A;
+}
+
+#brands {
+  padding: 50px 0;
+}
+#brands .brand {
+  width: 100%;
+  height: 103px;
+  border: 1px solid #e0e0e0;
+}
+#brands .brand img {
+  width: 160px;
+  height: 100%;
+  padding: 10px;
+}
+
+@media (max-width: 992px) {
+  .container-main {
+    width: 95%;
+    margin: 0 auto;
+  }
+  #header-top {
+    display: none;
+  }
+  #header-down {
+    height: 50px;
+  }
+  #header-down .logo {
+    display: flex;
+  }
+  #header-down .logo .bars {
+    display: block;
+    margin-top: 7px;
+  }
+  #header-down .logo .bars i {
+    font-size: 25px;
+  }
+  #header-down .logo img {
+    height: 25px;
+    width: 129px;
+    margin-top: 7px;
+  }
+  #header-down .logo p {
+    font-size: 11px;
+  }
+  #header-down .cart {
+    height: 100%;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: end;
+  }
+  #header-down .cart .lang {
+    display: block;
+  }
+  #header-down .cart .lang span {
+    display: none;
+  }
+  #header-down .cart .lang ul {
+    display: none;
+  }
+  #header-down .cart .wishlist {
+    width: 30px;
+    background-color: #fff;
+  }
+  #header-down .cart .wishlist i {
+    color: #3A3A3A;
+    font-size: 20px;
+  }
+  #header-down .cart .wishlist .count {
+    display: none;
+  }
+  #header-down .cart .shop .butn {
+    width: 30px;
+    background-color: #fff;
+  }
+  #header-down .cart .shop .butn img {
+    filter: invert(0%);
+  }
+  #header-down .cart .shop span {
+    display: none;
+  }
+  #navbar {
+    margin-top: 15px;
+  }
+  #navbar ul {
+    display: none;
+  }
+  #navbar .search-bar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  #navbar .search-bar input {
+    width: 100%;
+    font-size: 13px;
+    padding-left: 15px;
+    padding-right: 40px;
+    height: 40px;
+    border: 1px solid #f15803;
+  }
+  #navbar .search-bar i {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 21px;
+    color: #3A3A3A;
+  }
+  #banner {
+    height: 200px;
+  }
+  #banner .arrows {
+    top: 40%;
+  }
+  #brands .brand {
+    height: 124px;
+  }
+  #brands .brand img {
+    width: 196px;
+    height: 100%;
+  }
+}/*# sourceMappingURL=home.css.map */
