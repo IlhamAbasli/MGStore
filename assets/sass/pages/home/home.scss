@@ -1,18 +1,18 @@
-@import '../layout/header';
-@import '../layout/footer';
+@import '../../layout/header';
+@import '../../layout/footer';
 @font-face {
     font-family: GothamBold;
-    src: url(../../fonts/Gotham-Bold.woff2);
+    src: url(../../../fonts/Gotham-Bold.woff2);
 }
 
 @font-face {
     font-family: GothamLight;
-    src: url(../../fonts/Gotham-Light.woff2);
+    src: url(../../../fonts/Gotham-Light.woff2);
 }
 
 @font-face {
     font-family: Nunito;
-    src: url(../../fonts/NunitoSans_10pt-Regular.ttf);
+    src: url(../../../fonts/NunitoSans_10pt-Regular.ttf);
 }
 
 
@@ -71,7 +71,7 @@ p{
     }
 }
 #banner{
-    background-image: url(../../images/redmi_banner_bg.png);
+    background-image: url(../../../images/redmi_banner_bg.png);
     width: 100%;
     height: 700px;
     background-position: center;
@@ -500,7 +500,7 @@ p{
                 object-fit: contain;
                 background-size: 64%;
                 background-repeat: no-repeat;
-                background-image: url(../../images/sale.png);
+                background-image: url(../../../images/sale.png);
             }
         }
     }
